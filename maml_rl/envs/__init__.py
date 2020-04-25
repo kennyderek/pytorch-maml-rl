@@ -61,3 +61,9 @@ register(
     entry_point='maml_rl.envs.navigation:Navigation2DEnv',
     max_episode_steps=100
 )
+
+register(
+    '2DNavigation-v1',
+    entry_point='maml_rl.envs.navigation_walled:Navigation2DEnv',
+    max_episode_steps=150
+)
